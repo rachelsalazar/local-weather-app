@@ -14,5 +14,4 @@ export class CurrentWeatherComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

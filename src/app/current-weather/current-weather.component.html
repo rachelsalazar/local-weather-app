@@ -1,9 +1,11 @@
 <div *ngIf="current">
   <div>
-    <span>{{current.city}}, {{current.country}}</span>
+    <h1>{{current.city}}, {{current.country}}</h1>
+  </div>
+  <div class="date-div">
     <span>{{current.date | date:'fullDate'}}</span>
   </div>
-  <div>
+  <div class="image-temp">
     <img [src]='current.image' />
     <span>{{current.temperature}}</span>
   </div>

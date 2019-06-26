@@ -45,7 +45,7 @@ export class WeatherService implements IWeatherService {
     }
 
     return this.httpClient.get<ICurrentWeatherData>(
-      `${environment.baseUrl}api.openweathermap.org/data/2.5/weather?${uriParams}&appid=${environment.appId}`
+      `${environment.baseUrl}api.openweathermap.org/data/2.5/weather?${uriParams}&appid=${environment.appId}&units=imperial`
     ).pipe(
       map(data => this.transformToICurrentWeather(data))
     )
@@ -57,8 +57,9 @@ export class WeatherService implements IWeatherService {
       country: data.sys.country,
       date: data.dt * 1000,
       image: `http://openweathermap.org/img/w/${data.weather[0].icon}.png`,
-      temperature: data.main.temp,
+      temperature: Math.floor(data.main.temp),
       description: data.weather[0].description
     }
   }
 }
+

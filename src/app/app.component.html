@@ -4,11 +4,10 @@
     Localcast Weather
   </mat-toolbar>
   <div>Your city, your forcast, right now!</div>
-  <div>
+  <div class="search-div">
     <app-city-search (searchEvent)="doSearch($event)"></app-city-search>
   </div>
   <mat-card>
-    <h2>Current Weather</h2>
     <app-current-weather [current]="currentWeather"></app-current-weather>
   </mat-card>
 </div>

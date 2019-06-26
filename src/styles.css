@@ -2,3 +2,20 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.search-div {
+    margin-bottom: 50px;
+}
+
+.mat-card {
+    width: 50%;
+    margin: auto;
+}
+
+.date-div {
+    margin-bottom: 25px;
+}
+
+.image-temp {
+    margin-bottom: 50px;
+}
