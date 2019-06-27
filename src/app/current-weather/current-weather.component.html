@@ -5,11 +5,10 @@
   <div class="date-div">
     <span>{{current.date | date:'fullDate'}}</span>
   </div>
+  <span class="temp">{{current.temperature}} Degrees Farenheit</span>
+  <div class="description"> {{current.description}}</div>
   <div class="image-temp">
-    <img [src]='current.image' />
-    <span>{{current.temperature}}</span>
-  </div>
-  <div>
-    {{current.description}}
+    <!-- <img [src]='current.image' /> -->
+    <img class="img-responsive cool-image" src="assets/img/{{current.image}}.png">
   </div>
 </div>
