@@ -1,13 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <mat-toolbar color="primary">
-    Localcast Weather
+  <mat-toolbar>
+    The Weather
   </mat-toolbar>
-  <div>Your city, your forcast, right now!</div>
   <div class="search-div">
     <app-city-search (searchEvent)="doSearch($event)"></app-city-search>
   </div>
-  <mat-card>
     <app-current-weather [current]="currentWeather"></app-current-weather>
-  </mat-card>
 </div>

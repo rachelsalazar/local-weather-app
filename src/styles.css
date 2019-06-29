@@ -12,6 +12,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     margin: auto;
 }
 
+hr {
+    width: 10px;
+}
+
 .date-div {
     margin-bottom: 25px;
 }
