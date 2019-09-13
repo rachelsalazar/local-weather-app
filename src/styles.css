@@ -3,6 +3,10 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+mat-toolbar {
+    text-align: center;
+}
+
 .search-div {
     margin-bottom: 50px;
 }
@@ -26,4 +30,5 @@ hr {
 
 .cool-image {
     margin-top: -70px;
+    width: 30em;
 }
