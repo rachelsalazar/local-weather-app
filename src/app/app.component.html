@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <mat-toolbar>
-    Weather Now
+    <span>Local Weather</span>
+    <div class="search-div">
+      <app-city-search (searchEvent)="doSearch($event)"></app-city-search>
+    </div>
   </mat-toolbar>
-  <div class="search-div">
-    <app-city-search (searchEvent)="doSearch($event)"></app-city-search>
-  </div>
-    <app-current-weather [current]="currentWeather"></app-current-weather>
+  <app-current-weather [current]="currentWeather"></app-current-weather>
 </div>
